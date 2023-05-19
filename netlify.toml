@@ -6,9 +6,22 @@
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.
+
+# This Works
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# This does not work
 [[redirects]]
   from = "/*"
   to = "/*"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/"
   status = 200
 
   ## (optional) Settings for Netlify Dev
