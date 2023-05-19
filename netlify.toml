@@ -10,19 +10,20 @@
 # This Works
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/index.html" # <--------- This is the preferred method for redirects with a SPA, it pushes everything to the vue router
   status = 200
 
 # This does not work
-[[redirects]]
-  from = "/*"
-  to = "/*"
-  status = 200
-
-[[redirects]]
-  from = "/*"
-  to = "/"
-  status = 200
+#[[redirects]]
+#  from = "/*"
+#  to = "/*"
+#  status = 200
+#
+## This Works
+#[[redirects]]
+#  from = "/*"
+#  to = "/"
+#  status = 200
 
   ## (optional) Settings for Netlify Dev
   ## https://github.com/netlify/cli/blob/main/docs/netlify-dev.md#project-detection
